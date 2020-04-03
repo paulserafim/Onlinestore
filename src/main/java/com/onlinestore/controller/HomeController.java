@@ -10,5 +10,10 @@ public class HomeController {
 	public String index() {
 		return "index";
 	}
-
+	
+	@RequestMapping("/contul-meu")
+		public String contulMeu() {
+			return "contul-meu";
+		}
 }
+

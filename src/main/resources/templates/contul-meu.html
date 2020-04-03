@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:replace="common/header :: common-header">
+	</head>
+	
+	<body>
+		<div th:replace="common/header :: navbar"/>
+	
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8">
+					<h2><span>Contul meu</span></h2>
+				</div>
+				<div class="col-xs-4">
+					<img src="/img/logo.jpg" class="img-responsive" alt="BIG logo">
+				</div>
+			</div>
+			
+			<div class="row" style="margin-top:120 px;">
+				<div class="col-xs-9 col-xs-offset-3">
+
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="cont-nou-tab" data-toggle="tab" href="#cont-nou" role="tab" aria-controls="cont-nou" aria-selected="true">Cont nou</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="autentificare-tab" data-toggle="tab" href="#autentificare" role="tab" aria-controls="autentificare" aria-selected="false">Autentificare</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="resetare-parola-tab" data-toggle="tab" href="#resetare-parola" role="tab" aria-controls="resetare-parola" aria-selected="false">Resetare parola</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="cont-nou" role="tabpanel" aria-labelledby="cont-nou-tab">
+						
+						</div>
+						<div class="tab-pane fade" id="autentificare" role="tabpanel" aria-labelledby="autentificare-tab">
+						
+						</div>
+						
+						
+						<div class="tab-pane fade" id="resetare-parola" role="tabpanel" aria-labelledby="resetare-parola-tab">
+						
+						</div>
+					</div>
+
+				</div>
+			
+			</div>
+
+		<div th:replace="common/header :: body-bottom-scripts"></div>
+	</body>
+</html>
